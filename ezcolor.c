@@ -5,5 +5,6 @@ cy_rslt_t init_colors( void ) {
 }
 
 void color( color_t color ) {
+    cy_rgb_led_off();
     cy_rgb_led_on( color, CY_RGB_LED_MAX_BRIGHTNESS );
 }
